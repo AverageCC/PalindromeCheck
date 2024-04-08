@@ -24,6 +24,22 @@ body {
     position: relative; /* This allows me to utilize the parent child functionality of the body::before */
 }
 
+.left-image { /* This is the class reference, "left-image" in strings.html and defines the placement structure for the webpage */
+    position: absolute; /* This isolates the images outside the other elements in order to allign it left */
+    left: 0; /* This alligns the image to the left of the page */
+    padding: 45px; /* This sets the padding of the image to 45px to the right so that the image doesn't touch the edge */
+    height: 50%; /* This sets the height of the image to be 50% of the page - you can use this to set the size of the image */
+    width: 25%; /* This sets the width of the image to be 25% of the page - you can use this to set the size of the image */
+}
+
+.right-image { /* This is the class reference, "right-image" in strings.html and defines the placement structure for the webpage */
+    position: absolute; /* This isolates the images outside the other elements in order to allign it right */
+    right: 0; /* This alligns the image to the right of the page */
+    padding: 45px; /* This sets the padding of the image to 45px to the left so that the image doesn't touch the edge */
+    height: 50%; /* This sets the height of the image to be 50% of the page - you can use this to change the size of the image */
+    width: 25%; /* This sets the width of the image to be 25% of the page - You can use this to chang the size of the image */
+}
+
 header {
     padding: 20px; /* This sets the padding of the header */
     font-size: 30px; /* This sets the font size */
@@ -44,11 +60,11 @@ button {
     font-size: 16px; /* This sets the font size */
     cursor: pointer; /* This sets the cursor to a pointer */
     margin-top: 20px; /* This sets the margin of the button*/
-    box-shadow: 0 5px #999; /* This sets the shadow of the button */
+    box-shadow: 0 5px #999; /* This creates a shadow behind our button */
 }
 
 #palindrome {
-    width: 300px;
+    width: 300px; 
     height: 30px;
     padding: 5px;
     border-radius: 5px;
@@ -60,12 +76,12 @@ button:hover {
 }
 
 button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 2px #666;
-    transform: translateY(4px);
+    background-color: #3e8e41; /* This sets the background color of the button to a darker green when clicked */
+    box-shadow: 0 2px #666; /* This creates a shadow behind our button when clicked */
+    transform: translateY(4px); /* This moves the button down 4 pixels when clicked */
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 20px; /* This sets the margin from the top so there is spacing between our text box and result */
+    font-size: 20px; /* This sets the font size of the result displayed */
 }
